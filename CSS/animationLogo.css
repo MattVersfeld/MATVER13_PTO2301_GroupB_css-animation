@@ -1,0 +1,96 @@
+html {
+    background-color: rgb(220, 220, 220);
+}
+
+div {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    background-color: rgb(220, 220, 220);
+}
+
+img {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+}
+
+img:hover {
+    animation-name: linkedin-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+h1 {
+    animation-name: font-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    padding: 20px;
+}
+
+p {
+    font-size: x-large;
+    width: 400px;
+    padding: 20px;
+}
+
+@keyframes linkedin-animation {
+    0% {
+        background-color: transparent;
+        opacity: 0%;
+        transform: translateY(0);
+
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(90px);
+    }
+}
+
+@keyframes font-animation {
+    0% {
+        color: grey;
+    }
+
+    20% {
+        color: blue;
+    }
+
+    30% {
+        color: brown;
+    }
+
+    40% {
+        color: blueviolet;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    60% {
+        color: brown;
+    }
+
+    70% {
+        color: blueviolet;
+    }
+
+    80% {
+        color: chocolate;
+    }
+
+    100% {
+        color: purple;
+    }
+}
